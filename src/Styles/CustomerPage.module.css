@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+.sideNav {
+  width: 250px;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.sideBody {
+  width: 1265px;
+}
+.sideHeader {
+  width: 1210px;
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+.mainBody {
+  width: 100%;
+}
+.logo {
+  width: 250px;
+  padding: 20px 0px 0px 27px;
+  height: 70px;
+  background-color: #ffffff;
+  /* margin-bottom: 50px; */
+}
+.coinbutton {
+  width: 210px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 15px 25px;
+}
+
+.coinbutton:hover {
+  width: 210px;
+  height: 58px;
+  background-color: rgb(240, 243, 250);
+  border-radius: 30px;
+}
+.portfolioBalance {
+  padding: 30px 20px;
+  width: 855px;
+  height: 400px;
+  border: 1px dotted black;
+  border-radius: 12px;
+  background-color: #ffffff;
+  margin: 20px auto 10px;
+}
+
+.myAssets {
+  width: 855px;
+  border: 1px dotted black;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+}
+.inputsection {
+  display: flex;
+}
+.buttonSubmit {
+  width: 195px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: blue;
+  text-align: center;
+}
+
+@media screen and (max-width: 428px) {
+  .sideNav {
+    display: none;
+  }
+  .assets {
+    display: none;
+  }
+  .assetsButton {
+    display: none;
+  }
+  .headerasset {
+    padding-left: 100px;
+  }
+  .inlineBlock {
+    display: none;
+  }
+  .inputsection {
+    display: block;
+  }
+  .buttonSubmit {
+    background-color: rgb(16, 71, 149);
+    margin: 10px 0px;
+  }
+  .portfolioBalance {
+    height: 450px;
+    padding: 10px 0px;
+  }
+  .inputform {
+    border-right: none;
+  }
+}
