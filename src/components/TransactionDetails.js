@@ -18,7 +18,7 @@ export default function TransactionDetails({
         alignItems: "center",
         margin: "20px 0px",
         border: "1px dotted black",
-        width: "400px",
+        width: "370px",
         padding: "20px 10px",
         borderRadius: "12px",
       }}

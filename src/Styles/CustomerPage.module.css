@@ -67,6 +67,14 @@
   background-color: blue;
   text-align: center;
 }
+.divbody {
+  padding: 20px;
+}
+.inputform {
+  padding: 2px 15px;
+  width: 50%;
+  border-right: 1px dotted black;
+}
 
 @media screen and (max-width: 428px) {
   .sideNav {
@@ -92,10 +100,16 @@
     margin: 10px 0px;
   }
   .portfolioBalance {
-    height: 450px;
-    padding: 10px 0px;
+    width: 400px;
+    height: 550px;
+    padding: 15px 20px;
+    margin: 20px 10px;
+    /* text-align: center; */
   }
   .inputform {
     border-right: none;
+  }
+  .myAssets {
+    width: 400px;
   }
 }

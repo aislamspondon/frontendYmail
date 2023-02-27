@@ -26,14 +26,7 @@ export default function PortfolioBalance() {
     <div className={classes.portfolioBalance}>
       <h4>Portfolio Balance</h4>
       <h4>$0.00</h4>
-      <div
-        style={{
-          width: "100%",
-          border: "1px dotted black",
-          padding: "20px",
-          borderRadius: "12px",
-        }}
-      >
+      <div className={classes.divbody}>
         <div>
           <div style={{ display: "flex", alignItems: "center" }}>
             <p style={{ margin: "0px 2px", fontWeight: "bold" }}>
@@ -43,14 +36,7 @@ export default function PortfolioBalance() {
           </div>
           <p style={{ fontSize: "12px", color: "blue" }}>Learn more</p>
           <div className={classes.inputsection}>
-            <div
-              style={{
-                padding: "2px 15px",
-                width: "50%",
-                borderRight: "1px dotted black",
-              }}
-              className={classes.inputform}
-            >
+            <div className={classes.inputform}>
               <label style={{ marginBottom: "10px" }}>
                 <i class="fas fa-signature"></i>
                 <input
