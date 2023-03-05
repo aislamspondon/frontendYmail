@@ -18,7 +18,7 @@ export default function SuccessPage() {
 
       <p>Thank you for For using it.</p>
       <Link
-        to="/dashboard"
+        to="/"
         style={{
           padding: "10px 20px",
           background: "green",
