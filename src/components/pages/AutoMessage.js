@@ -6,6 +6,7 @@ import axios from "../../redux/utils/axios";
 import Loading from "../Loading";
 
 export default function AutoMessage() {
+  const [api, setApi] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [content, setContent] = useState("");
@@ -24,6 +25,7 @@ export default function AutoMessage() {
     e.preventDefault();
     setUploading(true);
 
+    formData.append("api", api);
     formData.append("sender_mail", email);
     formData.append("subject", subject);
     formData.append("content", content);
@@ -56,6 +58,16 @@ export default function AutoMessage() {
         {uploading && <Loading />}
         <Col xs={12} md={12} sm={12}>
           <Form onSubmit={submitHandler}>
+            <Form.Group controlId="api">
+              <Form.Label>API KEY</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter API Key"
+                value={api}
+                onChange={(e) => setApi(e.target.value)}
+              ></Form.Control>
+            </Form.Group>
+            <br />
             <Form.Group controlId="email">
               <Form.Label>Email</Form.Label>
               <Form.Control
